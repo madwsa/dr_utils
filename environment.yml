@@ -1,0 +1,17 @@
+
+# the start of a definition of a conda environment for this project -- as we
+# develop, add dependencies here and rebuild using 
+#
+# `conda env update --file environment.yml --prune`
+#
+# so we have a consistent environment for reproducibility
+
+name: dr_utils
+dependencies:
+  - numpy
+  - shapely
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - ipykernel
