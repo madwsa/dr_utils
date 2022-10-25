@@ -1,6 +1,16 @@
 import math
 import numpy as np
 
+"""
+parts of this are shamelessly copied from reward functions i found on
+the web, and the original authors, to my shame, are not credited. the
+basic idea is to have a collection of objectives that give a reward
+about in the range [0, 1], and then weight the reward according to how
+important the objective is.
+
+the important stuff is after all the helper functions, natch.
+"""
+
 
 class Reward:
     def __init__(self, verbose=False, optimum_line=None):
@@ -217,7 +227,7 @@ class Reward:
 
         # add together
         reward = (
-            (60 * r_point_car)
+            (40 * r_point_car)
             + (80 * r_V)
             + (10 * r_verstappen)
             + (10 * r_input)
